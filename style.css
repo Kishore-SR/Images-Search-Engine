@@ -108,3 +108,47 @@ form {
   cursor: pointer;
 }
 
+/* Mobile Responsive adjustments */
+@media (max-width: 768px) {
+  body {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+  }
+  .heading h1 {
+    font-size: 2rem;
+  }
+  .heading p {
+    font-size: 0.9rem;
+  }
+
+  #search-form {
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  #search-form input[type="text"] {
+    padding: 6px;
+    border-radius: 24px;
+    width: 100%;
+    font-size: 18px;
+    margin-right: 4px;
+  }
+  #search-form input::placeholder {
+    font-size: 14px;
+  }
+  #search-form button {
+    padding: 6px 12px;
+    border-radius: 25px;
+    font-size: 15px;
+  }
+  #search-form img {
+    width: 30px;
+  }
+
+  #search-result {
+    width: 100%;
+    margin: 70px auto 50px;
+    grid-template-columns: 1fr;
+  }
+}
