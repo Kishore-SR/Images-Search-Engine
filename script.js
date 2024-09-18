@@ -40,3 +40,15 @@ async function searchImages(){
     showMoreBtn.style.display = "block";
 }
 
+// Event Listener for 'Search' button
+searchForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    page = 1;
+    searchImages();
+})
+
+// Function to handel 'Explore More' button 
+showMoreBtn.addEventListener("click", ()=>{
+    page++;
+    searchImages(); //Call the function again
+})
